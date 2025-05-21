@@ -13,7 +13,7 @@ The Nutrition Website is a modern web application designed to empower users to t
 ---
 
 ## 🖼️ **Banner**
-![Nutrition Website Banner](banner.png)
+![Nutrition Website Banner](banner.jpeg)
 
 ---
 
