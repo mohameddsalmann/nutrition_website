@@ -1,88 +1,106 @@
-
 Nutrition Website
-A web application designed to help users track their nutritional intake, explore food data, and receive personalized dietary recommendations. This project aims to promote healthier eating habits by providing tools to monitor and analyze nutrition based on user input and reliable data sources.
-Table of Contents
-
-Features
-Installation
-Usage
-Technologies Used
-Contributing
-License
-Contact
 
 
-🖼️Banner
-website (banner12.png)
+📋 Project Description
+The Nutrition Website is a modern web application designed to empower users to track their dietary intake, explore nutritional data, and receive personalized diet recommendations. Built with a scalable and user-friendly architecture, it integrates a food database and provides insightful visualizations to promote healthier eating habits.
+
+🖼️ Banner
+banner.jpeg
+
+🌟 Features
+
+🍎 Meal Tracking: Log daily meals and view detailed nutritional breakdowns (calories, macros, vitamins).
+📊 Data Visualization: Interactive charts to monitor nutritional trends over time.
+🥗 Personalized Suggestions: Receive diet recommendations based on preferences and health goals.
+🔒 Secure Authentication: User accounts with secure login for personalized tracking.
+📱 Responsive Design: Seamless experience across desktop and mobile devices.
+🍽️ Recipe Explorer: Discover healthy recipes tailored to dietary needs.
 
 
+🛠️ Requirements
 
-Features
+Node.js 18.x+
+npm (Node Package Manager)
+MongoDB (for database, if applicable)
+Browser (for testing the frontend)
+Optional: Docker (for containerized deployment)
 
-Nutritional Tracking: Log daily food intake and view detailed nutritional breakdowns (calories, macronutrients, vitamins, etc.).
-Food Database Integration: Access a comprehensive database of foods with nutritional information (e.g., USDA or similar APIs).
-Personalized Recommendations: Receive diet suggestions based on user preferences, dietary restrictions, and health goals.
-User Authentication: Secure login and user profile management for personalized tracking.
-Responsive Design: Mobile-friendly interface for seamless use across devices.
-Data Visualization: Interactive charts and graphs to visualize nutritional trends over time.
 
-Installation
-To set up the project locally, follow these steps:
+📦 Installation
+Frontend (React Application)
 
-Clone the Repository:
+Clone the repository:
 git clone https://github.com/mohameddsalmann/nutrition_website.git
-cd nutrition_website
+cd nutrition_website/frontend
 
 
-Install Dependencies:Ensure you have Node.js and npm installed. Then run:
+Install dependencies:
 npm install
 
 
-Set Up Environment Variables:Create a .env file in the root directory and add necessary configurations (e.g., API keys, database credentials). Example:
-API_KEY=your_api_key_here
-DATABASE_URL=your_database_url_here
-
-
-Run the Application:Start the development server:
+Run the development server:
 npm start
 
-Open http://localhost:3000 in your browser to view the application.
+
+Alternatively, build and run with Docker:
+docker build -t nutrition-frontend .
+docker run -p 3000:3000 nutrition-frontend
 
 
-Usage
 
-Sign Up / Log In: Create an account or log in to access personalized features.
-Log Meals: Add foods to your daily log by searching the database or manually entering nutritional data.
-View Insights: Check your nutritional summary and recommendations on the dashboard.
-Explore Recipes: Browse recipe suggestions tailored to your dietary preferences.
-Track Progress: Use charts to monitor your nutritional intake over days, weeks, or months.
 
-Technologies Used
+Backend (Node.js/Express Server)
 
-Frontend: React, HTML, CSS, JavaScript
-Backend: Node.js, Express.js
-Database: MongoDB (or SQLite, depending on configuration)
-APIs: USDA FoodData Central API (or similar nutrition API)
-Styling: Bootstrap or Tailwind CSS
-Data Visualization: Chart.js
-Authentication: JWT or OAuth for secure user management
+Navigate to the backend directory:
+cd nutrition_website/backend
 
-Contributing
-We welcome contributions to improve the Nutrition Website! To contribute:
+
+Install dependencies:
+npm install
+
+
+Set up environment variables:Create a .env file in the backend directory with:
+PORT=5000
+MONGODB_URI=your_mongodb_connection_string
+API_KEY=your_nutrition_api_key
+
+
+Run the server:
+node server.js
+
+
+Alternatively, build and run with Docker:
+docker build -t nutrition-backend .
+docker run -p 5000:5000 nutrition-backend
+
+
+
+
+📑 Documentation
+For detailed API documentation, access the backend's API endpoints:
+
+Backend API: http://localhost:5000/api/docs (if Swagger/OpenAPI is implemented)
+Frontend: Open http://localhost:3000 in your browser to explore the application.
+
+For additional setup or configuration details, refer to the docs folder.
+
+🤝 Contributing
+We welcome contributions to enhance the Nutrition Website! To contribute:
 
 Fork the repository.
-Create a new branch (git checkout -b feature/your-feature-name).
-Make your changes and commit (git commit -m "Add your feature").
-Push to the branch (git push origin feature/your-feature-name).
-Open a Pull Request with a detailed description of your changes.
+Create a feature branch (git checkout -b feature/your-feature).
+Commit your changes (git commit -m "Add your feature").
+Push to the branch (git push origin feature/your-feature).
+Open a Pull Request with a clear description.
 
-Please ensure your code follows the project's coding standards and includes relevant tests.
-License
+
+📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.
-Contact
-For questions or suggestions, reach out to the project maintainer:
+
+📬 Contact
+For questions or feedback, reach out to:
 
 GitHub: mohameddsalmann
 Email: [Your email, if available]
 
-Thank you for using the Nutrition Website! Let's make healthy eating easier and more accessible.
+Thank you for exploring the Nutrition Website! 🌿 Let's make healthy eating simple and fun!
